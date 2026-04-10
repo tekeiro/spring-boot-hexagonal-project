@@ -10,7 +10,7 @@
         <version>${version}</version>
     </parent>
 
-    <artifactId>${rootArtifactId}-infra-inbound</artifactId>
+    <artifactId>${rootArtifactId}-inbound</artifactId>
     <packaging>pom</packaging>
 
     <name>${rootArtifactId}-infra</name>

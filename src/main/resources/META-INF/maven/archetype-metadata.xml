@@ -91,50 +91,62 @@
 
         <module id="${rootArtifactId}-infra" dir="infra" name="${rootArtifactId}-infra">
             <modules>
-                <module id="${rootArtifactId}-api-rest" dir="inbound/api-rest" name="${rootArtifactId}-api-rest">
-                    <fileSets>
-                        <fileSet filtered="false" encoding="UTF-8">
-                            <directory></directory>
-                            <includes>
-                                <include>.gitignore</include>
-                            </includes>
-                        </fileSet>
-                        <fileSet filtered="true" packaged="true" encoding="UTF-8">
-                            <directory>src/main/java</directory>
-                            <includes>
-                                <include>**/*.java</include>
-                            </includes>
-                        </fileSet>
-                        <fileSet filtered="true" packaged="true" encoding="UTF-8">
-                            <directory>src/test/java</directory>
-                            <includes>
-                                <include>**/*.java</include>
-                            </includes>
-                        </fileSet>
-                    </fileSets>
+                <module id="${rootArtifactId}-inbound" dir="inbound" name="${rootArtifactId}-inbound">
+                    <modules>
+                        <module id="${rootArtifactId}-api-rest" dir="api-rest" name="${rootArtifactId}-api-rest">
+                            <fileSets>
+                                <fileSet filtered="false" encoding="UTF-8">
+                                    <directory></directory>
+                                    <includes>
+                                        <include>.gitignore</include>
+                                    </includes>
+                                </fileSet>
+                                <fileSet filtered="true" packaged="true" encoding="UTF-8">
+                                    <directory>src/main/java</directory>
+                                    <includes>
+                                        <include>**/*.java</include>
+                                    </includes>
+                                </fileSet>
+                                <fileSet filtered="true" packaged="true" encoding="UTF-8">
+                                    <directory>src/test/java</directory>
+                                    <includes>
+                                        <include>**/*.java</include>
+                                    </includes>
+                                </fileSet>
+                            </fileSets>
+                        </module>
+                    </modules>
                 </module>
-                <module id="${rootArtifactId}-client-rest-external-service" dir="outbound/client-rest-external-service" name="${rootArtifactId}-client-rest-external-service">
-                    <fileSets>
-                        <fileSet filtered="false" encoding="UTF-8">
-                            <directory></directory>
-                            <includes>
-                                <include>.gitignore</include>
-                            </includes>
-                        </fileSet>
-                        <fileSet filtered="true" packaged="true" encoding="UTF-8">
-                            <directory>src/main/java</directory>
-                            <includes>
-                                <include>**/*.java</include>
-                            </includes>
-                        </fileSet>
-                        <fileSet filtered="true" packaged="true" encoding="UTF-8">
-                            <directory>src/test/java</directory>
-                            <includes>
-                                <include>**/*.java</include>
-                            </includes>
-                        </fileSet>
-                    </fileSets>
+
+                <module id="${rootArtifactId}-outbound" dir="outbound" name="${rootArtifactId}-outbound">
+                    <modules>
+                        <module id="${rootArtifactId}-client-rest-external-service" dir="client-rest-external-service" name="${rootArtifactId}-client-rest-external-service">
+                            <fileSets>
+                                <fileSet filtered="false" encoding="UTF-8">
+                                    <directory></directory>
+                                    <includes>
+                                        <include>.gitignore</include>
+                                    </includes>
+                                </fileSet>
+                                <fileSet filtered="true" packaged="true" encoding="UTF-8">
+                                    <directory>src/main/java</directory>
+                                    <includes>
+                                        <include>**/*.java</include>
+                                    </includes>
+                                </fileSet>
+                                <fileSet filtered="true" packaged="true" encoding="UTF-8">
+                                    <directory>src/test/java</directory>
+                                    <includes>
+                                        <include>**/*.java</include>
+                                    </includes>
+                                </fileSet>
+                            </fileSets>
+                        </module>
+                    </modules>
                 </module>
+
+
+
             </modules>
         </module>
 
