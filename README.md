@@ -14,3 +14,20 @@ Structure is as following:
     * **client-rest-external-service**: maven module sample to connect to an external service
 * **utils**
   * **commons**: Utils classes to use in the others modules
+
+ 
+## Install locally
+```shell
+mvn install
+```
+
+## Generate a new project
+```shell
+mvn archetype:generate \
+  -DarchetypeGroupId=com.example \
+  -DarchetypeArtifactId=spring-boot-hexagonal-archetype \
+  -DarchetypeVersion=1.0.0-SNAPSHOT \
+  -DgroupId=com.mycompany \
+  -DartifactId=my-service \
+  -Dversion=1.0.0-SNAPSHOT
+```
