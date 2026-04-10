@@ -24,7 +24,7 @@ mvn install
 ## Generate a new project
 ```shell
 mvn archetype:generate \
-  -DarchetypeGroupId=com.example \
+  -DarchetypeGroupId=org.keirobm \
   -DarchetypeArtifactId=spring-boot-hexagonal-archetype \
   -DarchetypeVersion=1.0.0-SNAPSHOT \
   -DgroupId=com.mycompany \
