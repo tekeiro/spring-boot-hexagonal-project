@@ -26,7 +26,7 @@ mvn install
 mvn archetype:generate \
   -DarchetypeGroupId=org.keirobm \
   -DarchetypeArtifactId=spring-boot-hexagonal-archetype \
-  -DarchetypeVersion=1.0.0-SNAPSHOT \
+  -DarchetypeVersion=1.0.1-SNAPSHOT \
   -DgroupId=com.mycompany \
   -DartifactId=my-service \
   -Dversion=1.0.0-SNAPSHOT
