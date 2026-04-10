@@ -6,9 +6,8 @@
 
     <parent>
         <groupId>${groupId}</groupId>
-        <artifactId>${rootArtifactId}-infra</artifactId>
+        <artifactId>${rootArtifactId}-infra-inbound</artifactId>
         <version>${version}</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <artifactId>${rootArtifactId}-api-rest</artifactId>

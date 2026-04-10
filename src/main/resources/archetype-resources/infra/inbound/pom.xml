@@ -6,18 +6,17 @@
 
     <parent>
         <groupId>${groupId}</groupId>
-        <artifactId>${rootArtifactId}</artifactId>
+        <artifactId>${rootArtifactId}-infra</artifactId>
         <version>${version}</version>
     </parent>
 
-    <artifactId>${rootArtifactId}-infra</artifactId>
+    <artifactId>${rootArtifactId}-infra-inbound</artifactId>
     <packaging>pom</packaging>
 
     <name>${rootArtifactId}-infra</name>
-    <description>Infrastructure layer - infra</description>
+    <description>Infrastructure layer - inbound</description>
 
     <modules>
-        <module>inbound</module>
-        <module>outbound</module>
+        <module>api-rest</module>
     </modules>
 </project>
